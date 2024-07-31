@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>iBlog &middot; About</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="fanonymous">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="resources\favicon.png" type="image/x-icon">
+
+
+</head>
+<main class="container">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark border rounded">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">iBlog</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav col-lg-10 justify-content-lg-center">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/about.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Topics
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">College</a></li>
+              <li><a class="dropdown-item" href="#">Food</a></li>
+              <li><a class="dropdown-item" href="#">Nature</a></li>
+              <li><a class="dropdown-item" href="#">Technology</a></li>
+              <li><a class="dropdown-item" href="#">Wild</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="/writeforus.html">Write for
+                  us</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/support.html">Support</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact.html">Contact Us</a>
+          </li>
+
+        </ul>
+        <div class="text-end">
+          <button type="button" class="btn btn-outline-light me-2" data-bs-toggle="modal"
+            data-bs-target="#loginModal">Login</button>
+          <button type="button" class="btn btn-warning" data-bs-toggle="modal"
+            data-bs-target="#signupModal">Sign-up</button>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </nav>
+
+  <!--Login modal-->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 text-success" id="loginModalLabel">Login to iCoder</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="row mb-3">
+              <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3">
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword3">
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-sm-10 offset-sm-2">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck1">
+                  <label class="form-check-label" for="gridCheck1">
+                    Remember me
+                  </label>
+                </div>
+              </div>
+            </div>
+
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary">Sign in</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Sign-up modal-->
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 text-success" id="signupModalLabel">Sign-Up to iCoder</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="col">
+            <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+          </div>
+          <div class="col my-3">
+            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+          </div>
+          <form>
+            <div class="row mb-3">
+              <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3">
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword3">
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label for="inputPassword3" class="col-sm-2 col-form-label">Confirm Password</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword3">
+              </div>
+            </div>
+            <div class="col my-3">
+              <input type="text" class="form-control" placeholder="Phone No." aria-label="Phone No.">
+            </div>
+
+            <fieldset class="row mb-3">
+              <legend class="col-form-label col-sm-2 pt-0">Profession?</legend>
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"
+                    checked>
+                  <label class="form-check-label" for="gridRadios1">
+                    Student
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                  <label class="form-check-label" for="gridRadios2">
+                    Teacher
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                  <label class="form-check-label" for="gridRadios3">
+                    Other
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+
+
+          </form>
+        </div>
+
+
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary">Sign Up</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-6">
+        <h1>About Us</h1>
+        <p class="font-monospace">
+          Welcome to iBlog, your go-to destination for insightful and engaging content on technology, lifestyle, and
+          everything in between. Here at iBlog, we believe in the power of sharing knowledge and experiences to inspire
+          and inform our readers. Whether you're a tech enthusiast looking for the latest trends and tutorials or
+          someone seeking tips on enhancing your everyday life, our diverse range of articles is designed to cater to
+          all your interests. Our mission is to create a vibrant community where ideas flourish and conversations
+          thrive. Thank you for being part of our journey, and we hope you enjoy exploring iBlog as much as we enjoy
+          creating it for you.</p>
+        <h5 class="font-monospace">Feel free to customize it further to better reflect your personal touch and the
+          unique aspects of your blog!</h5>
+      </div>
+      <div class="col-lg-6">
+        <img src="resources\Designer.jpg" class="img-fluid rounded" alt="About Us">
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="bg-light text-center text-lg-start mt-5">
+  <div class="container p-4">
+    <div class="row">
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase">iBlog</h5>
+        <p class="font-monospace">
+          Thank you for visiting iBlog. We’re excited to be part of your journey toward a healthier, happier you!
+        </p>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">About</h5>
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="/index.html" class="text-dark">Home</a>
+          </li>
+          <li>
+            <a href="/support.html" class="text-dark">Support</a>
+          </li>
+          <li>
+            <a href="/writeforus.html" class="text-dark">Write for Us</a>
+          </li>
+          <li>
+            <a href="/contact.html" class="text-dark">Contact US</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center p-3 bg-dark text-white">
+    © 2024 iBlog. All rights reserved.
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</html>
